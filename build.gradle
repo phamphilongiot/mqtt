@@ -1,0 +1,9 @@
+apply plugin: 'maven'
+uploadArchives {
+    repositories.mavenDeployer {
+        repository(url: "https://jitpack.io")
+        pom.groupId = 'https://github.com/phamphilongiot'
+        pom.artifactId = 'mqtt'
+        pom.version = '0.0.1'
+    }
+}
